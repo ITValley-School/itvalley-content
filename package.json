@@ -34,5 +34,8 @@
 		"@fontsource-variable/cabin": "^5.2.6",
 		"@fontsource-variable/roboto-condensed": "^5.2.6",
 		"@formkit/auto-animate": "^0.8.4"
+	},
+	"engines": {
+		"node": ">=18 <23"
 	}
 }
