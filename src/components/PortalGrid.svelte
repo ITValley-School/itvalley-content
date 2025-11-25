@@ -30,7 +30,7 @@ import Button from './Button.svelte';
       
       <Button
         className="portal-cta"
-        href="https://potenza.memberkit.com.br/"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         styleType="Video"
@@ -64,7 +64,7 @@ import Button from './Button.svelte';
     <div class="portal-action">
             <Button
               className="portal-cta"
-              href="https://infoprod.platosedu.io/v2/lms/login"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               styleType="Video"
@@ -115,7 +115,7 @@ import Button from './Button.svelte';
     <div class="portal-action">
       <Button
         className="portal-cta"
-        href="https://infoprod.platosedu.io/v2/lms/login"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         styleType="Video"
