@@ -31,7 +31,7 @@ export const trofeus = [
     titulo: "Gold Project Contributor – 200H+",
     destaque: "Gold Contributor",
     descricao: "+200h em projetos internacionais reais de IA",
-    imagem: "/images/trofeus/Gold Project Contributor – 200H+.svg",
+    imagem: "/images/trofeus/Gold_Project_Contributor_200H.svg",
     tags: ["Hard Code", "IA Gen"],
     area: "IA"
   },
