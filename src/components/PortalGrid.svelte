@@ -31,8 +31,6 @@ import Button from './Button.svelte';
       <Button
         className="portal-cta"
         href="#"
-        target="_blank"
-        rel="noopener noreferrer"
         styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
@@ -115,7 +113,7 @@ import Button from './Button.svelte';
     <div class="portal-action">
       <Button
         className="portal-cta"
-        href="#"
+        href="/taskdemand/video"
         target="_blank"
         rel="noopener noreferrer"
         styleType="Video"
