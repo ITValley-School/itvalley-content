@@ -6,13 +6,10 @@
       </div>
       <div>
         <h3 class="portal-title">Estágio Internacional</h3>
-        <p class="portal-description">Programas imersivos em parceiros globais da ItValley</p>
+        <p class="portal-description">Participe de projetos reais com empresas internacionais - sem sair de casa. Quando o aluno pode participar? A partir do mês 6 de pós-graduação, o aluno já pode participar de projetos do estágio, para construir um portfólio forte, atualizado e alinhado ao que o mercado internacional exige. Nossa ferramenta oficial para gestão das demandas do estágio é o Task Demand.</p>
       </div>
     </div>
     <div class="portal-action">
-      <button class="portal-cta">
-        Acessar <i class="fas fa-arrow-right ml-2"></i>
-      </button>
     </div>
   </div>
 
@@ -23,13 +20,31 @@
       </div>
       <div>
         <h3 class="portal-title">Academia de Dados &amp; IA</h3>
-        <p class="portal-description">Trilhas, projetos e desafios práticos</p>
+        <p class="portal-description">As academias são cursos que constituem trilhas práticas, que vão do básico ao avançado, com projetos reais e robustos que preparam você para atuar com segurança nas principais demandas do mercado. A cada curso finalizado, o aluno recebe um certificado em seu e-mail.</p>
       </div>
     </div>
     <div class="portal-action">
-      <button class="portal-cta">
-        Acessar <i class="fas fa-arrow-right ml-2"></i>
-      </button>
+      
+      <a
+        class="portal-cta"
+        href="https://potenza.memberkit.com.br/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-play-circle mr-2"></i>
+        Vídeo Explicativo
+      </a>
+
+      <a
+        class="portal-cta"
+        href="https://potenza.memberkit.com.br/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-sign-in-alt mr-2"></i>
+        Fazer Login
+      </a>
+
     </div>
   </div>
 
@@ -40,13 +55,29 @@
       </div>
       <div>
         <h3 class="portal-title">Pós-graduação ItValley</h3>
-        <p class="portal-description">Programas avançados em Dados &amp; IA</p>
+        <p class="portal-description">Nossas pós-graduações são em parceria com a Anhanguera, instituição de ensino superior que garante certificados chancelados pelo MEC. As pós-graduações são atualizadas para profissionais de TI que querem dominar IA, Machine Learning, Engenharia de Dados e tecnologias globais. </p>
       </div>
     </div>
     <div class="portal-action">
-      <button class="portal-cta">
-        Acessar <i class="fas fa-arrow-right ml-2"></i>
-      </button>
+            <a
+        class="portal-cta"
+        href="https://infoprod.platosedu.io/v2/lms/login"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-play-circle mr-2"></i>
+        Vídeo Explicativo
+      </a>
+
+      <a
+        class="portal-cta"
+        href="https://infoprod.platosedu.io/v2/lms/login"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-sign-in-alt mr-2"></i>
+       Área do aluno
+      </a>
     </div>
   </div>
 
@@ -57,7 +88,8 @@
       </div>
       <div>
         <h3 class="portal-title">Prêmios &amp; Troféus</h3>
-        <p class="portal-description">Ranking, conquistas e reconhecimento dos alunos</p>
+        <p class="portal-description">Certificados e placas de premiação
+        Ao finalizar um projeto do estágio internacional remoto, o aluno poderá solicitar seu certificado - assinado pelo dono ou gestor da empresa. Outros projetos também podem entregar placas de premiação, conforme aviso prévio da IT Valley School. Participe, publique no LinkedIn (não se esqueça de marcar a IT Valley School) e aumente sua visibilidade com conquistas reconhecidas pelo mercado.</p>
       </div>
     </div>
     <div class="portal-action">
@@ -74,30 +106,30 @@
       </div>
       <div>
         <h3 class="portal-title">Task Demand</h3>
-        <p class="portal-description">Demandas reais nacionais e internacionais</p>
+        <p class="portal-description">O Task Demand é a plataforma oficial da IT Valley School para gerir as demandas do Estágio Internacional Remoto. Ali, as empresas inserem seus projetos e o aluno envia as demandas do(s) projeto(s) que escolheu. Você pode acessar, participar e construir experiência internacional de verdade.</p>
       </div>
     </div>
     <div class="portal-action">
-      <button class="portal-cta">
-        Acessar <i class="fas fa-arrow-right ml-2"></i>
-      </button>
-    </div>
-  </div>
-</section>
+            <a
+        class="portal-cta"
+        href="https://infoprod.platosedu.io/v2/lms/login"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-play-circle mr-2"></i>
+        Vídeo Explicativo
+      </a>
 
-<section id="comunicados-section" class="gradient-purple rounded-2xl p-8 text-center shadow-xl">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="text-3xl font-bold text-white mb-4">Convites, novidades e oportunidades da ItValley.</h2>
-    <p class="text-xl text-white text-opacity-90 mb-8">
-      Fique por dentro de todas as atualizações, eventos exclusivos e oportunidades especiais.
-    </p>
-    <a
-      href="/comunicados"
-      class="inline-flex items-center bg-white text-purple-itvalue px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"
-    >
-      <i class="fas fa-bell mr-3"></i>
-      Ver Comunicados
-    </a>
+      <a
+        class="portal-cta"
+        href="https://taskdemand.itvalleyschool.com/login"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-sign-in-alt mr-2"></i>
+       Fazer Login
+      </a>
+    </div>
   </div>
 </section>
 

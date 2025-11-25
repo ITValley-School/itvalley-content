@@ -20,7 +20,6 @@
 
         <nav class="hidden md:flex items-center space-x-2 text-sm font-semibold text-gray-600">
           <a href="/" class="px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors">Início</a>
-          <a href="/comunicados" class="px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors">Comunicados</a>
           <a href="/premios" class="px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors">Prêmios</a>
         </nav>
       </div>
