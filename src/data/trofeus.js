@@ -59,7 +59,7 @@ export const trofeus = [
     titulo: "Low-Code Pipeline Specialist",
     destaque: "Data Enginner",
     descricao: " Pipeline com ferramentas low-code publicado e funcional",
-    imagem: "/images/trofeus/Full-Cycle Pipeline Data Specialist.svg",
+    imagem: "/images/trofeus/Low-Code Pipeline Specialist.svg",
     tags: ["Pipeline", "Data Enginner", "Specialist", "Low Code"],
     area: "Dados"
   }
@@ -69,7 +69,7 @@ export const trofeus = [
     titulo: "Gold Project Contributor – 200H+",
     destaque: "Data Enginner",
     descricao: "+200h em projetos internacionais reais de dados",
-    imagem: "/images/trofeus/Full-Cycle Pipeline Data Specialist.svg",
+    imagem: "/images/trofeus/Gold-Project-Contributor-DATA.svg",
     tags: ["Pipeline", "Data Enginner", "Specialist"],
     area: "Dados"
   }
