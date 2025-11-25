@@ -1,3 +1,6 @@
+<script>
+import Button from './Button.svelte';
+</script>
 <section id="portal-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
   <div id="estagio-internacional-card" class="portal-card md:col-span-2">
     <div class="portal-header">
@@ -25,25 +28,25 @@
     </div>
     <div class="portal-action">
       
-      <a
-        class="portal-cta"
+      <Button
+        className="portal-cta"
         href="https://potenza.memberkit.com.br/"
         target="_blank"
         rel="noopener noreferrer"
+        styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
         Vídeo Explicativo
-      </a>
-
-      <a
-        class="portal-cta"
+      </Button>
+      <Button
+        className="portal-cta"
         href="https://potenza.memberkit.com.br/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <i class="fas fa-sign-in-alt mr-2"></i>
         Fazer Login
-      </a>
+      </Button>
 
     </div>
   </div>
@@ -59,25 +62,25 @@
       </div>
     </div>
     <div class="portal-action">
-            <a
-        class="portal-cta"
-        href="https://infoprod.platosedu.io/v2/lms/login"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fas fa-play-circle mr-2"></i>
-        Vídeo Explicativo
-      </a>
-
-      <a
-        class="portal-cta"
-        href="https://infoprod.platosedu.io/v2/lms/login"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fas fa-sign-in-alt mr-2"></i>
-       Área do aluno
-      </a>
+            <Button
+              className="portal-cta"
+              href="https://infoprod.platosedu.io/v2/lms/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              styleType="Video"
+            >
+              <i class="fas fa-play-circle mr-2"></i>
+              Vídeo Explicativo
+            </Button>
+            <Button
+              className="portal-cta"
+              href="https://infoprod.platosedu.io/v2/lms/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-sign-in-alt mr-2"></i>
+             Área do aluno
+            </Button>
     </div>
   </div>
 
@@ -93,9 +96,9 @@
       </div>
     </div>
     <div class="portal-action">
-      <a href="/premios" class="portal-cta">
+      <Button className="portal-cta" href="/premios">
         Acessar <i class="fas fa-arrow-right ml-2"></i>
-      </a>
+      </Button>
     </div>
   </div>
 
@@ -110,26 +113,62 @@
       </div>
     </div>
     <div class="portal-action">
-            <a
-        class="portal-cta"
+      <Button
+        className="portal-cta"
         href="https://infoprod.platosedu.io/v2/lms/login"
         target="_blank"
         rel="noopener noreferrer"
+        styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
         Vídeo Explicativo
-      </a>
-
-      <a
-        class="portal-cta"
+      </Button>
+      <Button
+        className="portal-cta"
         href="https://taskdemand.itvalleyschool.com/login"
         target="_blank"
         rel="noopener noreferrer"
       >
         <i class="fas fa-sign-in-alt mr-2"></i>
-       Fazer Login
-      </a>
+        Fazer Login
+      </Button>
     </div>
+  </div>
+</section>
+
+<!-- Seção de Suporte e Comunidade -->
+<section id="suporte-comunidade" class="mt-16 mb-8 w-full flex flex-col items-center">
+  <div class="portal-card max-w-xl w-full flex flex-col items-center gap-6">
+    <h2 class="text-2xl font-bold flex items-center gap-2 mb-2" style="color: var(--text-color)">
+      <i class="fas fa-hands-helping"></i>
+      Suporte & Comunidade
+    </h2>
+    <p class="text-center mb-4" style="color: var(--muted-text)">Precisa de ajuda ou quer se conectar com outros alunos?</p>
+    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+      <Button
+        className="portal-cta flex-1 flex items-center justify-center text-lg"
+        href="https://wa.me/554499161570"
+        target="_blank"
+        rel="noopener noreferrer"
+        background="linear-gradient(135deg, #22c55e, #16a34a)"
+        hoverBackground="linear-gradient(135deg, #16a34a, #22c55e)"
+      >
+        <i class="fab fa-whatsapp mr-2 text-xl"></i>
+        Suporte ao Aluno
+      </Button>
+      <Button
+        className="portal-cta flex-1 flex items-center justify-center text-lg"
+        href="https://chat.whatsapp.com/DfNfn2eME6E7GtV1omy0W2"
+        target="_blank"
+        rel="noopener noreferrer"
+        background="linear-gradient(135deg, #fbbf24, #f59e42)"
+        hoverBackground="linear-gradient(135deg, #f59e42, #fbbf24)"
+      >
+        <i class="fas fa-users mr-2 text-xl"></i>
+        Comunidade de IA
+      </Button>
+    </div>
+    <span class="text-xs mt-2" style="color: var(--muted-text)">🤖 IT Valley School - Comunidade de IA</span>
   </div>
 </section>
 
@@ -201,24 +240,6 @@
   .portal-action {
     margin-top: auto;
   }
-  .portal-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    padding: 0.85rem 1.75rem;
-    border-radius: 999px;
-    font-weight: 600;
-    background: linear-gradient(135deg, #8b5cf6, #a855f7);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
-  }
-  .portal-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 25px rgba(168, 85, 247, 0.35);
-  }
+
 </style>
 
