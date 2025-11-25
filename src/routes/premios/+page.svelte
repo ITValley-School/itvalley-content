@@ -7,65 +7,109 @@
   <title>Prêmios &amp; Troféus • ItValley Portal</title>
 </svelte:head>
 
-<div class="min-h-screen transition-colors">
-  <Header />
-  <main class="pt-32 pb-20">
-    <div class="max-w-5xl mx-auto px-6">
-      <section class="text-center mb-12">
-        <p class="eyebrow">Selecione a trilha</p>
-        <h2 class="title">Prêmios &amp; Troféus</h2>
-        <p class="lead">
-          Escolha entre as conquistas focadas em Inteligência Artificial ou os destaques da trilha de Dados.
-        </p>
-      </section>
+<div class="min-h-screen flex flex-col transition-colors relative overflow-hidden">
+  <video class="background-video" autoplay loop muted playsinline>
+    <source src="/images/trofeus/Glória%20e%20Reconhecimento.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo em background.
+  </video>
+  <div class="content-overlay">
+    <Header />
+    <main class="flex-1 flex items-center justify-center">
+      <div class="main-content">
+        <section class="text-center mb-16 section-light-text">
+          <p class="eyebrow">Selecione a trilha</p>
+          <h2 class="title big-title">Prêmios &amp; Troféus</h2>
+          <p class="lead big-lead">
+            Escolha entre as conquistas focadas em Inteligência Artificial ou os destaques da trilha de Dados.
+          </p>
+        </section>
 
-      <section class="grid gap-8 md:grid-cols-2">
-        <a href="/premios/ia" class="cta-card ia">
-          <div>
-            <p class="eyebrow">Categoria</p>
-            <h3>Inteligência Artificial</h3>
-            <p>Troféus para quem domina pipelines, agentes e produtos completos de IA.</p>
-          </div>
-          <span>Ver troféus</span>
-        </a>
+        <section class="grid gap-12 md:grid-cols-2">
+          <a href="/premios/ia" class="cta-card ia big-card">
+            <div>
+              <p class="eyebrow">Categoria</p>
+              <h3 class="big-h3">Inteligência Artificial</h3>
+              <p class="big-p">Troféus para quem domina pipelines, agentes e produtos completos de IA.</p>
+            </div>
+            <span>Ver troféus</span>
+          </a>
 
-        <a href="/premios/dados" class="cta-card dados">
-          <div>
-            <p class="eyebrow">Categoria</p>
-            <h3>Dados &amp; Analytics</h3>
-            <p>Reconhecimentos para projetos de dados, engenharia e visualização.</p>
-          </div>
-          <span>Ver troféus</span>
-        </a>
-      </section>
-    </div>
-  </main>
-  <Footer />
+          <a href="/premios/dados" class="cta-card dados big-card">
+            <div>
+              <p class="eyebrow">Categoria</p>
+              <h3 class="big-h3">Dados &amp; Analytics</h3>
+              <p class="big-p">Reconhecimentos para projetos de dados, engenharia e visualização.</p>
+            </div>
+            <span>Ver troféus</span>
+          </a>
+        </section>
+      </div>
+    </main>
+    <Footer />
+  </div>
 </div>
-
 <style>
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    filter: brightness(0.45) blur(1.5px);
+    background: #000;
+  }
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: var(--muted-text);
   }
   .title {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    margin: 0.75rem 0;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 800;
+  }
+  .big-title {
+    font-size: clamp(3rem, 8vw, 5.5rem);
   }
   .lead {
     color: var(--muted-text);
-    max-width: 620px;
+    max-width: 700px;
     margin: 0 auto;
+    font-size: 1.35rem;
+  }
+  .big-lead {
+    font-size: 1.5rem;
+    max-width: 800px;
   }
   .cta-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding: 2rem;
-    border-radius: 1.5rem;
+    gap: 2rem;
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
     border: 1px solid var(--panel-border);
     text-decoration: none;
     color: var(--text-color);
@@ -74,6 +118,12 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    align-items: center;
+    min-height: 260px;
+  }
+  .big-card {
+    min-height: 320px;
+    padding: 3.5rem 2.5rem;
   }
   .cta-card::after {
     content: "";
@@ -84,31 +134,53 @@
     transition: opacity 0.25s ease;
   }
   .cta-card h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    font-size: 2rem;
+    margin: 0.75rem 0;
+    font-weight: 700;
+  }
+  .big-h3 {
+    font-size: 2.5rem;
   }
   .cta-card p {
     color: var(--muted-text);
+    font-size: 1.1rem;
+  }
+  .big-p {
+    font-size: 1.25rem;
   }
   .cta-card span {
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    font-size: 1.1rem;
   }
   .cta-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 25px 50px rgba(15, 23, 42, 0.2);
+    transform: translateY(-8px) scale(1.03);
+    border-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.22);
   }
   .cta-card.ia {
-    border-color: rgba(129, 140, 248, 0.4);
+    border-color: rgba(129, 140, 248, 0.5);
   }
   .cta-card.ia::after {
-    background: radial-gradient(circle at top, rgba(129, 140, 248, 0.45), transparent 60%);
+    background: radial-gradient(circle at top, rgba(129, 140, 248, 0.55), transparent 60%);
   }
   .cta-card.dados {
-    border-color: rgba(45, 212, 191, 0.4);
+    border-color: rgba(45, 212, 191, 0.5);
   }
   .cta-card.dados::after {
-    background: radial-gradient(circle at top, rgba(45, 212, 191, 0.45), transparent 60%);
+    background: radial-gradient(circle at top, rgba(45, 212, 191, 0.55), transparent 60%);
   }
+
+.section-light-text,
+.section-light-text .eyebrow,
+.section-light-text .title,
+.section-light-text .big-title,
+.section-light-text .lead,
+.section-light-text .big-lead {
+  color: #fff !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18), 0 1px 2px rgba(0,0,0,0.12);
+}
+
 </style>
+
+

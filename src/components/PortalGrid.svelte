@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 import Button from './Button.svelte';
 </script>
 <section id="portal-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -30,7 +32,8 @@ import Button from './Button.svelte';
       
       <Button
         className="portal-cta"
-        href="#"
+        href="/area_membros/video"
+        target="_blank"
         styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
@@ -62,7 +65,7 @@ import Button from './Button.svelte';
     <div class="portal-action">
             <Button
               className="portal-cta"
-              href="#"
+              href="/pos_graduacoes/video"
               target="_blank"
               rel="noopener noreferrer"
               styleType="Video"
