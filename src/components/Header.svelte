@@ -36,12 +36,12 @@
             <i class="fas fa-moon text-gray-600"></i>
           {/if}
         </button>
-        <button class="p-3 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors" aria-label="Configurações">
+        <!-- <button class="p-3 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors" aria-label="Configurações">
           <i class="fas fa-cog text-gray-600"></i>
-        </button>
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-itvalue to-purple-light flex items-center justify-center">
+        </button> -->
+        <!-- <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-itvalue to-purple-light flex items-center justify-center">
           <i class="fas fa-user text-white text-sm"></i>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
