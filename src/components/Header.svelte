@@ -8,13 +8,13 @@
 
 <header id="header" class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur border-b border-gray-100 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4">
-    <div class="flex items-center justify-between gap-6">
-      <div class="flex items-center gap-8">
-        <div id="logo-section" class="flex items-center space-x-4">
+    <div class="flex items-center justify-between gap-6 flex-wrap">
+      <div class="flex items-center gap-8 flex-wrap">
+        <div id="logo-section" class="flex items-center space-x-4 min-w-0">
           <LogoMark />
-          <div>
-            <h1 class="text-2xl font-bold text-gray-900 tracking-tight">{title}</h1>
-            <p class="text-sm text-gray-600 font-medium">{subtitle}</p>
+          <div class="truncate">
+            <h1 class="text-2xl font-bold text-gray-900 tracking-tight truncate">{title}</h1>
+            <p class="text-sm text-gray-600 font-medium truncate">{subtitle}</p>
           </div>
         </div>
 
@@ -36,15 +36,31 @@
             <i class="fas fa-moon text-gray-600"></i>
           {/if}
         </button>
-        <!-- <button class="p-3 rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors" aria-label="Configurações">
-          <i class="fas fa-cog text-gray-600"></i>
-        </button> -->
-        <!-- <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-itvalue to-purple-light flex items-center justify-center">
-          <i class="fas fa-user text-white text-sm"></i>
-        </div> -->
       </div>
     </div>
   </div>
+  <style>
+    @media (max-width: 640px) {
+      #header {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      #logo-section {
+        min-width: 0;
+        max-width: 60vw;
+      }
+      #logo-section img, #logo-section .logo-wrapper {
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+        min-width: 2.2rem !important;
+        min-height: 2.2rem !important;
+      }
+      #logo-section h1, #logo-section p {
+        font-size: 0.95rem !important;
+        max-width: 100%;
+      }
+    }
+  </style>
 </header>
 
 <style>

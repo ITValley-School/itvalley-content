@@ -49,6 +49,35 @@
   </div>
 </div>
 <style>
+    @media (max-width: 640px) {
+      .main-content {
+        padding: 1rem 0.25rem;
+      }
+      .section-light-text .title,
+      .section-light-text .big-title {
+        font-size: 2rem !important;
+      }
+      .lead, .big-lead {
+        font-size: 1rem !important;
+      }
+      .cta-card, .big-card {
+        min-height: 180px;
+        padding: 1.2rem 0.7rem;
+        gap: 1rem;
+      }
+      .cta-card h3, .big-h3 {
+        font-size: 1.2rem !important;
+      }
+      .cta-card p, .big-p {
+        font-size: 0.95rem !important;
+      }
+      .cta-card span {
+        font-size: 0.95rem !important;
+      }
+      .eyebrow {
+        font-size: 0.85rem;
+      }
+    }
   .background-video {
     position: fixed;
     top: 0;

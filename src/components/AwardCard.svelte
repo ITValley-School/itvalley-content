@@ -25,6 +25,27 @@
 </article>
 
 <style>
+    @media (max-width: 640px) {
+      .award-card {
+        padding: 0.7rem;
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+      }
+      .content h3 {
+        font-size: 1.05rem;
+      }
+      .description {
+        font-size: 0.95rem;
+      }
+      .pill {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+      }
+      .tags span {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+      }
+    }
   .award-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

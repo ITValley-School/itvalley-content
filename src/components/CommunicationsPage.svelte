@@ -30,4 +30,15 @@
   .subtitle {
     color: var(--muted-text);
   }
+  @media (max-width: 640px) {
+    #page-title h2 {
+      font-size: 1.5rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    #comunicados-list {
+      gap: 1rem !important;
+    }
+  }
 </style>

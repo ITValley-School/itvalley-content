@@ -50,6 +50,7 @@
     background: var(--panel-bg);
     border: 1px solid var(--panel-border);
     box-shadow: var(--panel-shadow);
+    padding: 2rem;
   }
   .card:hover {
     box-shadow: 0 25px 50px rgba(15, 23, 42, 0.2);
@@ -71,5 +72,31 @@
     color: var(--tag-text);
     font-size: 0.85rem;
     font-weight: 600;
+  }
+  @media (max-width: 640px) {
+    .card {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.1rem;
+    }
+    .card-text {
+      font-size: 0.98rem;
+    }
+    .tag-pill {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.7rem;
+    }
+    .card-date {
+      font-size: 0.85rem;
+    }
+    .px-6 {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    .py-2 {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
   }
 </style>

@@ -36,6 +36,24 @@
 {/if}
 
 <style>
+    @media (max-width: 640px) {
+      .hero {
+        padding: 1.5rem 0.5rem 1rem;
+      }
+      h2 {
+        font-size: 1.2rem !important;
+      }
+      .lead {
+        font-size: 0.98rem !important;
+      }
+      .category-pill {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+      }
+      .awards-list {
+        gap: 0.7rem;
+      }
+    }
   .hero {
     text-align: center;
     padding: 3rem 1rem 2rem;

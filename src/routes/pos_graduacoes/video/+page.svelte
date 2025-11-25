@@ -25,6 +25,26 @@
 <Footer />
 
 <style>
+@media (max-width: 640px) {
+  .video-section {
+    padding: 0.5rem 0.1rem;
+    border-radius: 0.7rem;
+  }
+  .video-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .video-container {
+    max-width: 100vw;
+    border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+    min-height: unset;
+  }
+  iframe {
+    min-height: 180px;
+    border-radius: 0.5rem;
+  }
+}
 body, .video-section {
   min-height: 100vh;
 }

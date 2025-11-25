@@ -179,13 +179,47 @@ import Button from './Button.svelte';
     background: var(--panel-bg);
     border: 1px solid var(--panel-border);
     box-shadow: var(--panel-shadow);
-      padding: 2rem;
+    padding: 2rem;
     min-height: 16rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-      overflow: hidden;
+    overflow: hidden;
+  }
+  @media (max-width: 640px) {
+    .portal-card {
+      padding: 1rem;
+      min-height: 10rem;
+    }
+    .portal-header {
+      gap: 0.75rem;
+    }
+    .portal-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 1.25rem;
+    }
+    .portal-title {
+      font-size: 1.1rem;
+    }
+    .portal-description {
+      font-size: 0.95rem;
+    }
+    .portal-action {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    #suporte-comunidade .flex-col, #suporte-comunidade .flex {
+      flex-direction: column !important;
+      gap: 0.7rem !important;
+    }
+    .portal-cta {
+      width: 100% !important;
+      font-size: 1rem !important;
+    }
   }
     .portal-card::before {
       content: "";
