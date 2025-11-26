@@ -41,7 +41,7 @@
     border-radius: 1.2rem;
     max-width: 350px;
     background: transparent;
-    border: 1.5px solid var(--panel-border);
+    /* border: 1.5px solid var(--panel-border); */
     box-shadow: 0 8px 32px rgba(124, 58, 237, 0.13), 0 1.5px 8px rgba(15,23,42,0.08);
     color: var(--text-color);
     display: flex;
@@ -124,7 +124,7 @@
     border-color: #7c3aed;
   }
   button {
-    padding: 0.45rem 0.9rem;
+    padding: 0.45rem 0.7rem;
     border-radius: 999px;
     border: none;
     background: linear-gradient(135deg, #7c3aed 0%, #38bdf8 100%);

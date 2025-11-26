@@ -38,16 +38,25 @@
 </button>
 
 {#if showChat}
-  <div style="
-    position: fixed;
-    bottom: 5.5rem;
-    right: 2rem;
-    z-index: 1001;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-    padding: 0.5rem;
-  ">
+  <div
+    style="
+      position: fixed;
+      bottom: 5.5rem;
+      right: 2rem;
+      z-index: 1001;
+      background: transparent;
+      border-radius: 20px;
+    "
+    class="chatbot-float-container"
+  >
     <Chatbot />
   </div>
 {/if}
+
+<style>
+  @media (max-width: 640px) {
+    .chatbot-float-container {
+      background: black !important;
+    }
+  }
+</style>
