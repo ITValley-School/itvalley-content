@@ -79,7 +79,7 @@ export const trofeus = [
     titulo: "Global Talent - First International Deal",
     destaque: "Data Enginner",
     descricao: "1º contrato internacional pago, entregue e validado",
-    imagem: "/images/trofeus/Global-Talent---DATA.svg",
+    imagem: "/images/trofeus/GlobalTalentDATA.svg",
     tags: ["Pipeline", "Data Enginner", "Specialist"],
     area: "Dados"
   }
