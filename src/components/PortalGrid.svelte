@@ -33,7 +33,6 @@ import Button from './Button.svelte';
       <Button
         className="portal-cta"
         href="/area_membros/video"
-        target="_blank"
         styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
@@ -66,7 +65,6 @@ import Button from './Button.svelte';
             <Button
               className="portal-cta"
               href="/pos_graduacoes/video"
-              target="_blank"
               rel="noopener noreferrer"
               styleType="Video"
             >
@@ -117,7 +115,6 @@ import Button from './Button.svelte';
       <Button
         className="portal-cta"
         href="/taskdemand/video"
-        target="_blank"
         rel="noopener noreferrer"
         styleType="Video"
       >
@@ -127,8 +124,8 @@ import Button from './Button.svelte';
       <Button
         className="portal-cta"
         href="https://taskdemand.itvalleyschool.com/login"
-        target="_blank"
         rel="noopener noreferrer"
+        target="_blank"
       >
         <i class="fas fa-sign-in-alt mr-2"></i>
         Fazer Login
