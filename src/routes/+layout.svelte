@@ -1,5 +1,8 @@
+
 <script>
   import Chatbot from '../components/Chatbot.svelte';
+  import Header from '../components/Header.svelte';
+  import Footer from '../components/Footer.svelte';
   import { onMount } from 'svelte';
   let showChat = false;
 
@@ -12,7 +15,9 @@
 </script>
 
 
+<Header />
 <slot />
+<Footer />
 
 <!-- Botão flutuante -->
 <button

@@ -1,8 +1,3 @@
-<script lang="ts">
-  import Header from "../../components/Header.svelte";
-  import Footer from "../../components/Footer.svelte";
-</script>
-
 <svelte:head>
   <title>Prêmios &amp; Troféus • ItValley Portal</title>
 </svelte:head>
@@ -13,7 +8,7 @@
     Seu navegador não suporta vídeo em background.
   </video>
   <div class="content-overlay">
-    <Header />
+    
     <main class="flex-1 flex items-center justify-center">
       <div class="main-content">
         <section class="text-center mb-16 section-light-text">
@@ -45,7 +40,7 @@
         </section>
       </div>
     </main>
-    <Footer />
+   
   </div>
 </div>
 <style>

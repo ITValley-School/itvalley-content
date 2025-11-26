@@ -1,11 +1,8 @@
 <script>
-  import Header from '../../../components/Header.svelte';
-  import Footer from '../../../components/Footer.svelte';
   // Link do vídeo do Google Drive no modo "preview"
   const videoUrl = 'https://drive.google.com/file/d/17odu1umEm05WFMjKSvU91OUJH9N9bSK0/preview';
 </script>
 
-<Header />
 
 <section class="video-section">
   <h1 class="video-title">Vídeo Especial - Área de Membros</h1>
@@ -22,7 +19,7 @@
   </div>
 </section>
 
-<Footer />
+
 
 <style>
 @media (max-width: 640px) {
