@@ -155,7 +155,7 @@
       <div class="message {msg.from}">{msg.text}</div>
     {/each}
     {#if loading}
-      <div class="message bot">Pensando...</div>
+      <div class="message bot">...</div>
     {/if}
   </div>
   <form on:submit|preventDefault={sendMessage}>
