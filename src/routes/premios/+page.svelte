@@ -12,21 +12,25 @@
     <main class="flex-1 flex items-center justify-center">
       <div class="main-content">
         <section class="text-center mb-16 section-light-text">
-          <p class="eyebrow">Selecione a trilha</p>
-          <h2 class="title big-title">Prêmios &amp; Troféus</h2>
+          
+          <h2 class="title big-title">Premiações</h2>
           <p class="lead big-lead">
             Escolha entre as conquistas focadas em Inteligência Artificial ou os destaques da trilha de Dados.
           </p>
         </section>
 
+        <section class="text-center mb-6 section-light-text">
+        <p class="eyebrow">Selecione a trilha</p>
+        </section>
+        
         <section class="grid gap-12 md:grid-cols-2">
           <a href="/premios/ia" class="cta-card ia big-card">
             <div>
               <p class="eyebrow">Categoria</p>
               <h3 class="big-h3">Inteligência Artificial</h3>
-              <p class="big-p">Troféus para quem domina pipelines, agentes e produtos completos de IA.</p>
+              <p class="big-p">Reconhecimentos para quem domina pipelines, agentes e produtos completos de IA.</p>
             </div>
-            <span>Ver troféus</span>
+            <span>Ver Placas</span>
           </a>
 
           <a href="/premios/dados" class="cta-card dados big-card">
@@ -35,7 +39,7 @@
               <h3 class="big-h3">Dados &amp; Analytics</h3>
               <p class="big-p">Reconhecimentos para projetos de dados, engenharia e visualização.</p>
             </div>
-            <span>Ver troféus</span>
+            <span>Ver Placas</span>
           </a>
         </section>
       </div>

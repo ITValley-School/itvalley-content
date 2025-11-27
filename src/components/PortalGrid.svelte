@@ -89,7 +89,7 @@ import Button from './Button.svelte';
           <i class="fas fa-trophy text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Prêmios &amp; Troféus</h3>
+        <h3 class="portal-title">Placas de Premiação</h3>
         <p class="portal-description">Certificados e placas de premiação
         Ao finalizar um projeto do estágio internacional remoto, o aluno poderá solicitar seu certificado - assinado pelo dono ou gestor da empresa. Outros projetos também podem entregar placas de premiação, conforme aviso prévio da IT Valley School. Participe, publique no LinkedIn (não se esqueça de marcar a IT Valley School) e aumente sua visibilidade com conquistas reconhecidas pelo mercado.</p>
       </div>
@@ -166,7 +166,6 @@ import Button from './Button.svelte';
         Comunidade de IA
       </Button>
     </div>
-    <span class="text-xs mt-2" style="color: var(--muted-text)">🤖 IT Valley School - Comunidade de IA</span>
   </div>
 </section>
 
