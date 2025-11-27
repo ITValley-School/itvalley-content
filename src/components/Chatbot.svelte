@@ -1,11 +1,14 @@
 
 <script>
   import { chatbotMessages } from '../lib/stores/chatbotMessages';
+
+  import { t } from '../lib/i18n';
   let userInput = '';
   let loading = false;
   let sessionId = crypto.randomUUID();
 
-  $: messages = $chatbotMessages;
+  // Mensagem inicial internacionalizada
+  $: messages = $chatbotMessages.length > 0 ? $chatbotMessages : [{ from: 'bot', text: $t('chatbot_initial') }];
 
   async function sendMessage() {
     if (!userInput.trim()) return;
@@ -145,7 +148,7 @@
 
 <div class="chatbot-container">
   <div class="chatbot-header">
-    Klaus - 🤖 Assistente IT Valley
+    {$t('chatbot_title')}
   </div>
   <div class="messages">
     {#each messages as msg}
@@ -156,7 +159,7 @@
     {/if}
   </div>
   <form on:submit|preventDefault={sendMessage}>
-    <input type="text" bind:value={userInput} placeholder="Digite sua mensagem..." autocomplete="off" />
-    <button type="submit" disabled={loading || !userInput.trim()}>Enviar</button>
+    <input type="text" bind:value={userInput} placeholder={$t('chatbot_placeholder')} autocomplete="off" />
+    <button type="submit" disabled={loading || !userInput.trim()}>{$t('chatbot_send')}</button>
   </form>
 </div>

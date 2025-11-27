@@ -1,11 +1,13 @@
+
 <script>
+  import { t } from '../../../lib/i18n';
   // Link do vídeo do Google Drive no modo "preview"
   const videoUrl = 'https://drive.google.com/file/d/17odu1umEm05WFMjKSvU91OUJH9N9bSK0/preview';
 </script>
 
 
 <section class="video-section">
-  <h1 class="video-title">Vídeo Especial - Área de Membros</h1>
+  <h1 class="video-title">{$t('video_area_membros')}</h1>
   <div class="video-container">
     <iframe
       src={videoUrl}
@@ -14,8 +16,9 @@
       allow="autoplay; encrypted-media"
       allowfullscreen
       frameborder="0"
-      title="Vídeo Especial Prêmios"
+      title={$t('video_area_membros')}
     ></iframe>
+    <p class="video-caption">{$t('video_area_membros_caption')}</p>
   </div>
 </section>
 

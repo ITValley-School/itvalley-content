@@ -1,4 +1,6 @@
+
 <script>
+  import { t } from '../../../lib/i18n';
   // Link do vídeo do Google Drive no modo "preview"
   const videoUrl = 'https://drive.google.com/file/d/1FalD9p_3k_Fota0vWFGGSamI7vTQod6-/preview';
 </script>
@@ -6,7 +8,7 @@
 
 
 <section class="video-section">
-  <h1 class="video-title">Vídeo Especial - Pós Graduações</h1>
+  <h1 class="video-title">{$t('video_pos_graduacoes')}</h1>
   <div class="video-container">
     <iframe
       src={videoUrl}
@@ -15,8 +17,9 @@
       allow="autoplay; encrypted-media"
       allowfullscreen
       frameborder="0"
-      title="Vídeo Especial Prêmios"
+      title={$t('video_pos_graduacoes')}
     ></iframe>
+    <p class="video-caption">{$t('video_pos_graduacoes_caption')}</p>
   </div>
 </section>
 

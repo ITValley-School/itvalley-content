@@ -1,6 +1,6 @@
 <footer id="footer" class="fixed bottom-0 left-0 right-0 bg-gray-900/95 text-gray-200 text-sm py-5 border-t border-gray-800 backdrop-blur z-40">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <p>Todos os direitos reservados • IT Valley School</p>
+    <p>• IT Valley School</p>
   </div>
 </footer>
 

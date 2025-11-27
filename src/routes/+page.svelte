@@ -1,9 +1,10 @@
 <script lang="ts">
   import PortalGrid from "../components/PortalGrid.svelte";
+  import { t } from '../lib/i18n';
 </script>
 
 <svelte:head>
-  <title>ItValley Portal</title>
+  <title>{$t('portal_title')}</title>
 </svelte:head>
 
 <div class="relative min-h-screen overflow-hidden">

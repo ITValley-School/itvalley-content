@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
-
 import Button from './Button.svelte';
+import { t } from '../lib/i18n';
 </script>
 <section id="portal-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
   <div id="estagio-internacional-card" class="portal-card md:col-span-2">
@@ -10,8 +10,8 @@ import Button from './Button.svelte';
           <i class="fas fa-globe-americas text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Estágio Internacional</h3>
-        <p class="portal-description">Participe de projetos reais com empresas internacionais - sem sair de casa. Quando o aluno pode participar? A partir do mês 6 de pós-graduação, o aluno já pode participar de projetos do estágio, para construir um portfólio forte, atualizado e alinhado ao que o mercado internacional exige. Nossa ferramenta oficial para gestão das demandas do estágio é o Task Demand.</p>
+        <h3 class="portal-title">{$t('estagio_internacional_title')}</h3>
+        <p class="portal-description">{$t('estagio_internacional_desc')}</p>
       </div>
     </div>
     <div class="portal-action">
@@ -24,8 +24,8 @@ import Button from './Button.svelte';
           <i class="fas fa-brain text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Academia de Dados &amp; IA</h3>
-        <p class="portal-description">As academias são cursos que constituem trilhas práticas, que vão do básico ao avançado, com projetos reais e robustos que preparam você para atuar com segurança nas principais demandas do mercado. A cada curso finalizado, o aluno recebe um certificado em seu e-mail.</p>
+        <h3 class="portal-title">{$t('academia_title')}</h3>
+        <p class="portal-description">{$t('academia_desc')}</p>
       </div>
     </div>
     <div class="portal-action">
@@ -36,7 +36,7 @@ import Button from './Button.svelte';
         styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
-        Vídeo Explicativo
+        {$t('video_explicativo')}
       </Button>
       <Button
         className="portal-cta"
@@ -45,7 +45,7 @@ import Button from './Button.svelte';
         rel="noopener noreferrer"
       >
         <i class="fas fa-sign-in-alt mr-2"></i>
-        Fazer Login
+        {$t('fazer_login')}
       </Button>
 
     </div>
@@ -57,8 +57,8 @@ import Button from './Button.svelte';
           <i class="fas fa-university text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Pós-graduação ItValley</h3>
-        <p class="portal-description">Nossas pós-graduações são em parceria com a Anhanguera, instituição de ensino superior que garante certificados chancelados pelo MEC. As pós-graduações são atualizadas para profissionais de TI que querem dominar IA, Machine Learning, Engenharia de Dados e tecnologias globais. </p>
+        <h3 class="portal-title">{$t('posgraduacao_title')}</h3>
+        <p class="portal-description">{$t('posgraduacao_desc')}</p>
       </div>
     </div>
     <div class="portal-action">
@@ -69,7 +69,7 @@ import Button from './Button.svelte';
               styleType="Video"
             >
               <i class="fas fa-play-circle mr-2"></i>
-              Vídeo Explicativo
+              {$t('video_explicativo')}
             </Button>
             <Button
               className="portal-cta"
@@ -78,7 +78,7 @@ import Button from './Button.svelte';
               rel="noopener noreferrer"
             >
               <i class="fas fa-sign-in-alt mr-2"></i>
-             Área do aluno
+             {$t('area_aluno')}
             </Button>
     </div>
   </div>
@@ -89,14 +89,13 @@ import Button from './Button.svelte';
           <i class="fas fa-trophy text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Placas de Premiação</h3>
-        <p class="portal-description">Certificados e placas de premiação
-        Ao finalizar um projeto do estágio internacional remoto, o aluno poderá solicitar seu certificado - assinado pelo dono ou gestor da empresa. Outros projetos também podem entregar placas de premiação, conforme aviso prévio da IT Valley School. Participe, publique no LinkedIn (não se esqueça de marcar a IT Valley School) e aumente sua visibilidade com conquistas reconhecidas pelo mercado.</p>
+        <h3 class="portal-title">{$t('premios_title')}</h3>
+        <p class="portal-description">{$t('premios_desc')}</p>
       </div>
     </div>
     <div class="portal-action">
       <Button className="portal-cta" href="/premios">
-        Acessar <i class="fas fa-arrow-right ml-2"></i>
+        {$t('acessar')} <i class="fas fa-arrow-right ml-2"></i>
       </Button>
     </div>
   </div>
@@ -107,8 +106,8 @@ import Button from './Button.svelte';
           <i class="fas fa-tasks text-2xl"></i>
       </div>
       <div>
-        <h3 class="portal-title">Task Demand</h3>
-        <p class="portal-description">O Task Demand é a plataforma oficial da IT Valley School para gerir as demandas do Estágio Internacional Remoto. Ali, as empresas inserem seus projetos e o aluno envia as demandas do(s) projeto(s) que escolheu. Você pode acessar, participar e construir experiência internacional de verdade.</p>
+        <h3 class="portal-title">{$t('taskdemand_title')}</h3>
+        <p class="portal-description">{$t('taskdemand_desc')}</p>
       </div>
     </div>
     <div class="portal-action">
@@ -119,7 +118,7 @@ import Button from './Button.svelte';
         styleType="Video"
       >
         <i class="fas fa-play-circle mr-2"></i>
-        Vídeo Explicativo
+        {$t('video_explicativo')}
       </Button>
       <Button
         className="portal-cta"
@@ -128,7 +127,7 @@ import Button from './Button.svelte';
         target="_blank"
       >
         <i class="fas fa-sign-in-alt mr-2"></i>
-        Fazer Login
+        {$t('fazer_login')}
       </Button>
     </div>
   </div>
@@ -139,9 +138,9 @@ import Button from './Button.svelte';
   <div class="portal-card max-w-xl w-full flex flex-col items-center gap-6">
     <h2 class="text-2xl font-bold flex items-center gap-2 mb-2" style="color: var(--text-color)">
       <i class="fas fa-hands-helping"></i>
-      Suporte & Comunidade
+      {$t('suporte_comunidade_title')}
     </h2>
-    <p class="text-center mb-4" style="color: var(--muted-text)">Precisa de ajuda ou quer se conectar com outros alunos?</p>
+    <p class="text-center mb-4" style="color: var(--muted-text)">{$t('suporte_comunidade_desc')}</p>
     <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
       <Button
         className="portal-cta flex-1 flex items-center justify-center text-lg"
@@ -152,7 +151,7 @@ import Button from './Button.svelte';
         hoverBackground="linear-gradient(135deg, #16a34a, #22c55e)"
       >
         <i class="fab fa-whatsapp mr-2 text-xl"></i>
-        Suporte ao Aluno
+        {$t('suporte_aluno')}
       </Button>
       <Button
         className="portal-cta flex-1 flex items-center justify-center text-lg"
@@ -163,7 +162,7 @@ import Button from './Button.svelte';
         hoverBackground="linear-gradient(135deg, #f59e42, #fbbf24)"
       >
         <i class="fas fa-users mr-2 text-xl"></i>
-        Comunidade de IA
+        {$t('comunidade_ia')}
       </Button>
     </div>
   </div>

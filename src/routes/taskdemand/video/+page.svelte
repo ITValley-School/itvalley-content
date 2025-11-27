@@ -1,12 +1,13 @@
 
+
 <script>
+  import { t } from '../../../lib/i18n';
   const videoUrl = 'https://drive.google.com/file/d/1m-gHbSNpfFubxdW-2IxL1UqqVpYVUaR9/preview';
 </script>
 
 
-
 <section class="video-section">
-  <h1 class="video-title">Vídeo Explicativo - Task Demand</h1>
+  <h1 class="video-title">{$t('video_taskdemand')}</h1>
   <div class="video-container">
     <iframe
       src={videoUrl}
@@ -15,8 +16,9 @@
       allow="autoplay; encrypted-media"
       allowfullscreen
       frameborder="0"
-      title="Vídeo Explicativo Task Demand"
+      title={$t('video_taskdemand')}
     ></iframe>
+    <p class="video-caption">{$t('video_taskdemand_caption')}</p>
   </div>
 </section>
 

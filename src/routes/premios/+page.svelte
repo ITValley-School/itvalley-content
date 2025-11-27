@@ -1,5 +1,8 @@
+<script lang="ts">
+  import { t } from '../../lib/i18n';
+</script>
 <svelte:head>
-  <title>Prêmios &amp; Troféus • ItValley Portal</title>
+  <title>{$t('premios_titulo_pagina')}</title>
 </svelte:head>
 
 <div class="min-h-screen flex flex-col transition-colors relative overflow-hidden">
@@ -13,33 +16,33 @@
       <div class="main-content">
         <section class="text-center mb-16 section-light-text">
           
-          <h2 class="title big-title">Premiações</h2>
+          <h2 class="title big-title">{$t('premios_titulo')}</h2>
           <p class="lead big-lead">
-            Escolha entre as conquistas focadas em Inteligência Artificial ou os destaques da trilha de Dados.
+            {$t('premios_subtitulo')}
           </p>
         </section>
 
         <section class="text-center mb-6 section-light-text">
-        <p class="eyebrow">Selecione a trilha</p>
+        <p class="eyebrow">{$t('premios_selecione_trilha')}</p>
         </section>
         
         <section class="grid gap-12 md:grid-cols-2">
           <a href="/premios/ia" class="cta-card ia big-card">
             <div>
-              <p class="eyebrow">Categoria</p>
-              <h3 class="big-h3">Inteligência Artificial</h3>
-              <p class="big-p">Reconhecimentos para quem domina pipelines, agentes e produtos completos de IA.</p>
+              <p class="eyebrow">{$t('premios_categoria')}</p>
+              <h3 class="big-h3">{$t('premios_ia_titulo')}</h3>
+              <p class="big-p">{$t('premios_ia_desc')}</p>
             </div>
-            <span>Ver Placas</span>
+            <span>{$t('premios_ver_placas')}</span>
           </a>
 
           <a href="/premios/dados" class="cta-card dados big-card">
             <div>
-              <p class="eyebrow">Categoria</p>
-              <h3 class="big-h3">Dados &amp; Analytics</h3>
-              <p class="big-p">Reconhecimentos para projetos de dados, engenharia e visualização.</p>
+              <p class="eyebrow">{$t('premios_categoria')}</p>
+              <h3 class="big-h3">{$t('premios_dados_titulo')}</h3>
+              <p class="big-p">{$t('premios_dados_desc')}</p>
             </div>
-            <span>Ver Placas</span>
+            <span>{$t('premios_ver_placas')}</span>
           </a>
         </section>
       </div>

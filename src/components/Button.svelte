@@ -10,6 +10,9 @@
   export let hoverBackground = '';
   export let styleType = null; // null = padrão, 'Video' = botão vídeo
 
+  import { theme } from '../lib/stores/theme';
+
+
   // Definições de cor para o tipo 'Video'
   const videoBg = 'linear-gradient(135deg, #2563eb, #38bdf8)';
   const videoHover = 'linear-gradient(135deg, #38bdf8, #2563eb)';
@@ -23,6 +26,8 @@
   let isHovered = false;
   function handleMouseOver() { isHovered = true; }
   function handleMouseOut() { isHovered = false; }
+  function handleFocus() { isHovered = true; }
+  function handleBlur() { isHovered = false; }
   $: hoverStyle = (isHovered && (hoverBackground || styleType === 'Video'))
     ? `${style};background:${hoverBackground || videoHover}`
     : computedStyle;
@@ -33,22 +38,26 @@
     href={href}
     target={target}
     rel={rel}
-    class={className}
+    class={className + ($theme === 'dark' ? ' dark-btn' : '')}
     style={hoverStyle}
     on:click={onClick}
     on:mouseover={handleMouseOver}
     on:mouseout={handleMouseOut}
+    on:focus={handleFocus}
+    on:blur={handleBlur}
   >
     <slot />
   </a>
 {:else}
   <button
-    type={type}
-    class={className}
+    type={type === 'submit' ? 'submit' : type === 'reset' ? 'reset' : 'button'}
+    class={className + ($theme === 'dark' ? ' dark-btn' : '')}
     style={hoverStyle}
     on:click={onClick}
     on:mouseover={handleMouseOver}
     on:mouseout={handleMouseOut}
+    on:focus={handleFocus}
+    on:blur={handleBlur}
   >
     <slot />
   </button>
@@ -73,5 +82,19 @@
   a:hover, button:hover {
     transform: translateY(-2px);
     box-shadow: 0 15px 25px rgba(168, 85, 247, 0.35);
+  }
+  .dark-btn {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid #333;
+  }
+  .dark-btn:hover {
+    background: #222 !important;
+    color: #fff !important;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.35);
+  }
+  :global([data-theme='dark']) button,
+  :global([data-theme='dark']) a {
+    color: #fff !important;
   }
 </style>

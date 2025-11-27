@@ -34,7 +34,8 @@
 	"dependencies": {
 		"@fontsource-variable/cabin": "^5.2.6",
 		"@fontsource-variable/roboto-condensed": "^5.2.6",
-		"@formkit/auto-animate": "^0.8.4"
+		"@formkit/auto-animate": "^0.8.4",
+		"svelte-i18n": "^4.0.1"
 	},
 	"engines": {
 		"node": ">=18 <23"
