@@ -83,18 +83,5 @@
     transform: translateY(-2px);
     box-shadow: 0 15px 25px rgba(168, 85, 247, 0.35);
   }
-  .dark-btn {
-    background: #111 !important;
-    color: #fff !important;
-    border: 1px solid #333;
-  }
-  .dark-btn:hover {
-    background: #222 !important;
-    color: #fff !important;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.35);
-  }
-  :global([data-theme='dark']) button,
-  :global([data-theme='dark']) a {
-    color: #fff !important;
-  }
+
 </style>

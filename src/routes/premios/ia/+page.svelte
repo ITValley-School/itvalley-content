@@ -1,9 +1,11 @@
+
 <script lang="ts">
   import AwardsPage from "../../../components/AwardsPage.svelte";
+  import { t } from '../../../lib/i18n';
 </script>
 
 <svelte:head>
-  <title>Prêmios de IA • ItValley Portal</title>
+  <title>{$t('premios_ia_titulo')} • ItValley Portal</title>
 </svelte:head>
 
 <div class="min-h-screen transition-colors">
@@ -12,8 +14,8 @@
     <div class="max-w-5xl mx-auto px-6">
       <AwardsPage
         area="IA"
-        titulo="Prêmios de Inteligência Artificial"
-        descricao="Reconhecimentos para quem entrega soluções completas de IA, do pipeline ao produto final."
+        titulo={$t('premios_ia_titulo')}
+        descricao={$t('premios_ia_desc')}
       />
     </div>
   </main>

@@ -39,5 +39,7 @@
   "premios_ia_desc": "Recognitions for those who master pipelines, agents, and complete AI products.",
   "premios_dados_titulo": "Data & Analytics",
   "premios_dados_desc": "Recognitions for data, engineering, and visualization projects.",
-  "premios_ver_placas": "See Plaques"
+  "premios_ver_placas": "See Plaques",
+  "Categoria":"Category",
+  "Reconhecimento":"Official Recognition"
 }

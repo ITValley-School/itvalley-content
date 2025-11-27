@@ -135,13 +135,13 @@ import { t } from '../lib/i18n';
 
 <!-- Seção de Suporte e Comunidade -->
 <section id="suporte-comunidade" class="mt-16 mb-8 w-full flex flex-col items-center">
-  <div class="portal-card max-w-xl w-full flex flex-col items-center gap-6">
+  <div class="portal-card max-w-2xl w-full flex flex-col items-center gap-8" style="padding:2.5rem 2rem;">
     <h2 class="text-2xl font-bold flex items-center gap-2 mb-2" style="color: var(--text-color)">
       <i class="fas fa-hands-helping"></i>
       {$t('suporte_comunidade_title')}
     </h2>
     <p class="text-center mb-4" style="color: var(--muted-text)">{$t('suporte_comunidade_desc')}</p>
-    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+    <div class="flex flex-col sm:flex-row gap-6 w-full justify-center">
       <Button
         className="portal-cta flex-1 flex items-center justify-center text-lg"
         href="https://wa.me/554499161570"

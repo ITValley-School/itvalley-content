@@ -1,6 +1,9 @@
 <script lang="ts">
   import AwardCard from "./AwardCard.svelte";
   import { trofeus } from "../data/trofeus.js";
+  import { locale } from '../lib/stores/locale';
+  import { get } from 'svelte/store';
+  import { t } from '../lib/i18n';
 
   export let area: string | null = null;
   export let titulo: string = "Prêmios & Troféus ItValley";
@@ -11,12 +14,10 @@
 </script>
 
 <section class="hero">
-  <p class="eyebrow">Reconhecimento oficial</p>
+  <p class="eyebrow">{$t('Reconhecimento')}</p>
   <h2>{titulo}</h2>
   <p class="lead">{descricao}</p>
-  {#if area}
-    <span class="category-pill">Categoria: {area}</span>
-  {/if}
+
 </section>
 
 {#if filtered.length}
@@ -25,7 +26,11 @@
       <AwardCard
         destaque={trofeu.destaque}
         titulo={trofeu.titulo}
-        descricao={trofeu.descricao}
+        descricao={
+          $locale === 'en' && trofeu.descricao_en ? trofeu.descricao_en
+          : $locale === 'fr' && trofeu.descricao_fr ? trofeu.descricao_fr
+          : trofeu.descricao
+        }
         imagem={trofeu.imagem}
         tags={trofeu.tags}
       />
