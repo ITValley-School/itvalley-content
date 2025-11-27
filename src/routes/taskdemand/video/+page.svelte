@@ -18,7 +18,6 @@
       frameborder="0"
       title={$t('video_taskdemand')}
     ></iframe>
-    <p class="video-caption">{$t('video_taskdemand_caption')}</p>
   </div>
 </section>
 

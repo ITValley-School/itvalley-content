@@ -19,7 +19,6 @@
       frameborder="0"
       title={$t('video_pos_graduacoes')}
     ></iframe>
-    <p class="video-caption">{$t('video_pos_graduacoes_caption')}</p>
   </div>
 </section>
 
