@@ -10,6 +10,8 @@
   // Mensagem inicial internacionalizada
   $: messages = $chatbotMessages.length > 0 ? $chatbotMessages : [{ from: 'bot', text: $t('chatbot_initial') }];
 
+  const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+
   async function sendMessage() {
     if (!userInput.trim()) return;
     const input = userInput;
@@ -17,18 +19,26 @@
     userInput = '';
     loading = true;
     try {
-      const response = await fetch('https://itvalleyn8n.azurewebsites.net/webhook/9c41bc43-1068-40e4-a15e-32d7bdda61ad/chat', {
+      // Preparar histórico para enviar ao backend
+      const historico = $chatbotMessages
+        .slice(1) // Remove mensagem inicial de boas-vindas
+        .map(msg => ({
+          role: msg.from === 'user' ? 'user' : 'assistant',
+          content: msg.text
+        }));
+
+      const response = await fetch(`${API_BASE}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sessionId,
-          action: 'sendMessage',
-          chatInput: input
+        body: JSON.stringify({ 
+          mensagem: input,
+          session_id: sessionId,
+          historico: historico
         })
       });
       const data = await response.json();
-      if (data.output) {
-        chatbotMessages.update(msgs => [...msgs, { from: 'bot', text: data.output }]);
+      if (data?.resposta) {
+        chatbotMessages.update(msgs => [...msgs, { from: 'bot', text: data.resposta }]);
       } else {
         chatbotMessages.update(msgs => [...msgs, { from: 'bot', text: 'Erro: resposta inesperada.' }]);
       }
