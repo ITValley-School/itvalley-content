@@ -10,7 +10,7 @@
   // Mensagem inicial internacionalizada
   $: messages = $chatbotMessages.length > 0 ? $chatbotMessages : [{ from: 'bot', text: $t('chatbot_initial') }];
 
-  const API_BASE = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000').replace(/\/+$/, '');
+  const API_BASE = 'https://itvalleycontentbackend-brb9g0bnc4hmddbt.canadacentral-01.azurewebsites.net';
   console.log('API_BASE (runtime):', API_BASE);
 
   async function sendMessage() {
