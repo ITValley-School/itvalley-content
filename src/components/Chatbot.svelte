@@ -10,7 +10,8 @@
   // Mensagem inicial internacionalizada
   $: messages = $chatbotMessages.length > 0 ? $chatbotMessages : [{ from: 'bot', text: $t('chatbot_initial') }];
 
-  const API_BASE = 'https://itvalleycontentbackend-brb9g0bnc4hmddbt.canadacentral-01.azurewebsites.net';
+  const API_BASE = 'http://rg-klaus-backend.azurewebsites.net';
+  // 'http://127.0.0.1:8000';
   console.log('API_BASE (runtime):', API_BASE);
 
   async function sendMessage() {
